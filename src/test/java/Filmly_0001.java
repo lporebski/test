@@ -76,13 +76,13 @@ public class Filmly_0001 extends variables{
 		Assert.assertTrue(input(".//form//input[@placeholder='URL do avatara']" ,"https://i.stack.imgur.com/l60Hf.png"));
 		Assert.assertTrue(input(".//form//input[@name='password']", variables.password));
 		Assert.assertTrue(input(".//form//input[@name='confirmPassword']", variables.password));
-//		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zarejestruj siê']"));
-//		Assert.assertTrue(click(".//header//a[normalize-space(text())='Zaloguj siê']"));
-//		Assert.assertTrue(ifexist(".//h2[normalize-space(text())='Zaloguj siê']"));
-//		Assert.assertTrue(input(".//form//input[@placeholder='E-mail']", variables.email));
-//		Assert.assertTrue(input(".//form//input[@placeholder='Has³o']", variables.password));
-//		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zaloguj siê']"));
-//		Assert.assertTrue(click(".//header//a[normalize-space(text())='Wyloguj siê']"));
+		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zarejestruj siê']"));
+		Assert.assertTrue(click(".//header//a[normalize-space(text())='Zaloguj siê']"));
+		Assert.assertTrue(ifexist(".//h2[normalize-space(text())='Zaloguj siê']"));
+		Assert.assertTrue(input(".//form//input[@placeholder='E-mail']", variables.email));
+		Assert.assertTrue(input(".//form//input[@placeholder='Has³o']", variables.password));
+		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zaloguj siê']"));
+		Assert.assertTrue(click(".//header//a[normalize-space(text())='Wyloguj siê']"));
 
 	  }
 
