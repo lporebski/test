@@ -49,12 +49,12 @@ public class Filmly_0001 extends variables{
 	@BeforeClass
 	public void setUp()
 	{
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions options = new ChromeOptions();
+		WebDriverManager.firefoxdriver().setup();
+		FirefoxOptions options = new FirefoxOptions();
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--headless");
-		driver = new ChromeDriver(options);
+		driver = new FirefoxDriver(options);
 		driver.navigate().to("https://filmly-app.vercel.app/filmy");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.MILLISECONDS);
@@ -76,7 +76,6 @@ public class Filmly_0001 extends variables{
 		Assert.assertTrue(input(".//form//input[@placeholder='E-mail']", variables.email));
 		Assert.assertTrue(input(".//form//input[@placeholder='Has³o']", variables.password));
 		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zaloguj siê']"));
-		Assert.assertTrue(ifexist(".//header//a[normalize-space(text())='Wyloguj siê']"));
 		Assert.assertTrue(click(".//header//a[normalize-space(text())='Wyloguj siê']"));
 	  }
 

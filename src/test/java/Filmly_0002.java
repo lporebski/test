@@ -56,7 +56,7 @@ public class Filmly_0002 extends variables{
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--headless");
 		driver = new ChromeDriver(options);
-		driver.navigate().to("https://filmly-app.vercel.app/filmy");
+		driver.navigate().to("https://filmly-app.vercel.app");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.MILLISECONDS);
 	}
@@ -65,12 +65,12 @@ public class Filmly_0002 extends variables{
 	public void Filmly_0002() throws InterruptedException
 	{
 
-		Assert.assertTrue(click(".//header//a[normalize-space(text())='Zaloguj siê']"));
-		Assert.assertTrue(ifexist(".//h2[normalize-space(text())='Zaloguj siê']"));
+		Assert.assertTrue(click(".//header//a[normalize-space(text())='Zaloguj siï¿½']"));
+		Assert.assertTrue(ifexist(".//h2[normalize-space(text())='Zaloguj siï¿½']"));
 		Assert.assertTrue(input(".//form//input[@placeholder='E-mail']", variables.email));
-		Assert.assertTrue(input(".//form//input[@placeholder='Has³o']", variables.password));
-		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zaloguj siê']"));
-		Assert.assertTrue(ifexist(".//header//a[normalize-space(text())='Wyloguj siê']"));
+		Assert.assertTrue(input(".//form//input[@placeholder='Hasï¿½o']", variables.password));
+		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zaloguj siï¿½']"));
+		Assert.assertTrue(ifexist(".//header//a[normalize-space(text())='Wyloguj siï¿½']"));
 		Assert.assertTrue(click(".//main//div//h2[normalize-space(text())='Efekt motyla']/.."));
 		Assert.assertTrue(ifexist(".//main//div//h2[normalize-space(text())='Komentarze']"));
 		driver.findElement(By.xpath(".//main//div//button[normalize-space(text())='Dodaj']")).sendKeys(Keys.END);
@@ -78,7 +78,7 @@ public class Filmly_0002 extends variables{
 		Assert.assertTrue(click(".//main//div//button[normalize-space(text())='Dodaj']"));
 		Assert.assertTrue(click(".//main//div//button[normalize-space(text())='Dodaj']"));
 		Assert.assertTrue(ifexist(".//main//div//p[normalize-space(text())='Komentarz_ATp0002']"));
-		Assert.assertTrue(click(".//header//a[normalize-space(text())='Wyloguj siê']"));
+		Assert.assertTrue(click(".//header//a[normalize-space(text())='Wyloguj siï¿½']"));
 	}
 
 	@AfterTest
