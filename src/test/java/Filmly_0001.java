@@ -64,20 +64,20 @@ public class Filmly_0001 extends variables{
 	public void Filmly_0001() throws InterruptedException
 	  {
 
-		Assert.assertTrue(click(".//header//a[normalize-space(text())='Zarejestruj siê']"));
+		Assert.assertTrue(click(".//header//a[normalize-space(text())='Zarejestruj siÄ™']"));
 		Assert.assertTrue(input(".//form//input[@placeholder='Nickname']", variables.nickname));
 		Assert.assertTrue(input(".//form//input[@placeholder='E-mail']", variables.email));
 		Assert.assertTrue(input(".//form//input[@placeholder='URL do avatara']" ,"https://i.stack.imgur.com/l60Hf.png"));
-		Assert.assertTrue(input(".//form//input[@placeholder='Has³o']", variables.password));
-		Assert.assertTrue(input(".//form//input[@placeholder='Powtórz has³o']", variables.password));
-		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zarejestruj siê']"));
-		Assert.assertTrue(click(".//header//a[normalize-space(text())='Zaloguj siê']"));
-		Assert.assertTrue(ifexist(".//h2[normalize-space(text())='Zaloguj siê']"));
+		Assert.assertTrue(input(".//form//input[@placeholder='HasÂ³o']", variables.password));
+		Assert.assertTrue(input(".//form//input[@placeholder='PowtÃ³rz hasÂ³o']", variables.password));
+		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zarejestruj siÃª']"));
+		Assert.assertTrue(click(".//header//a[normalize-space(text())='Zaloguj siÃª']"));
+		Assert.assertTrue(ifexist(".//h2[normalize-space(text())='Zaloguj siÃª']"));
 		Assert.assertTrue(input(".//form//input[@placeholder='E-mail']", variables.email));
-		Assert.assertTrue(input(".//form//input[@placeholder='Has³o']", variables.password));
-		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zaloguj siê']"));
-		Assert.assertTrue(ifexist(".//header//a[normalize-space(text())='Wyloguj siê']"));
-		Assert.assertTrue(click(".//header//a[normalize-space(text())='Wyloguj siê']"));
+		Assert.assertTrue(input(".//form//input[@placeholder='HasÂ³o']", variables.password));
+		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zaloguj siÃª']"));
+		Assert.assertTrue(ifexist(".//header//a[normalize-space(text())='Wyloguj siÃª']"));
+		Assert.assertTrue(click(".//header//a[normalize-space(text())='Wyloguj siÃª']"));
 	  }
 
 	@AfterClass
