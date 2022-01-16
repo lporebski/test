@@ -64,7 +64,7 @@ public class Filmly_0001 extends variables{
 	public void Filmly_0001() throws InterruptedException
 	  {
 
-//		Assert.assertTrue(click(".//header//a[normalize-space(text())='Zarejestruj siê']"));
+		Assert.assertTrue(click(".//header//a[normalize-space(text())='Zarejestruj sie']"));
 //		Assert.assertTrue(input(".//form//input[@placeholder='Nickname']", variables.nickname));
 //		Assert.assertTrue(input(".//form//input[@placeholder='E-mail']", variables.email));
 //		Assert.assertTrue(input(".//form//input[@placeholder='URL do avatara']" ,"https://i.stack.imgur.com/l60Hf.png"));
