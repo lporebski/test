@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Filmly_0001" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-16T18:14:41" hostname="DESKTOP-2H7HB1G" time="10.799">
+<testsuite name="Filmly_0001" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-16T18:40:37" hostname="DESKTOP-2H7HB1G" time="2.332">
   <properties/>
-  <testcase name="Filmly_0001" classname="Filmly_0001" time="10.799"/>
-  <system-out><![CDATA[Element present
-]]></system-out>
+  <testcase name="Filmly_0001" classname="Filmly_0001" time="2.332"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 15287
+Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 4154
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sty 16, 2022 7:14:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1642358436.527][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1642358436.527][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+sty 16, 2022 7:40:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
