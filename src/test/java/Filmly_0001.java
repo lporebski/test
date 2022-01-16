@@ -53,7 +53,7 @@ public class Filmly_0001 extends variables{
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
-//		options.addArguments("--headless");
+		options.addArguments("--headless");
 		driver = new ChromeDriver(options);
 		driver.navigate().to("https://filmly-app.vercel.app/filmy");
 		driver.manage().window().maximize();
@@ -68,16 +68,16 @@ public class Filmly_0001 extends variables{
 		Assert.assertTrue(input(".//form//input[@placeholder='Nickname']", variables.nickname));
 		Assert.assertTrue(input(".//form//input[@placeholder='E-mail']", variables.email));
 		Assert.assertTrue(input(".//form//input[@placeholder='URL do avatara']" ,"https://i.stack.imgur.com/l60Hf.png"));
-		Assert.assertTrue(input(".//form//input[@placeholder='Has³o']", variables.password));
-		Assert.assertTrue(input(".//form//input[@placeholder='Powtórz has³o']", variables.password));
-		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zarejestruj siê']"));
-		Assert.assertTrue(click(".//header//a[normalize-space(text())='Zaloguj siê']"));
-		Assert.assertTrue(ifexist(".//h2[normalize-space(text())='Zaloguj siê']"));
+		Assert.assertTrue(input(".//form//input[@placeholder='Hasło']", variables.password));
+		Assert.assertTrue(input(".//form//input[@placeholder='Powtórz hasło']", variables.password));
+		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zarejestruj się']"));
+		Assert.assertTrue(click(".//header//a[normalize-space(text())='Zaloguj się']"));
+		Assert.assertTrue(ifexist(".//h2[normalize-space(text())='Zaloguj się']"));
 		Assert.assertTrue(input(".//form//input[@placeholder='E-mail']", variables.email));
-		Assert.assertTrue(input(".//form//input[@placeholder='Has³o']", variables.password));
-		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zaloguj siê']"));
-		Assert.assertTrue(ifexist(".//header//a[normalize-space(text())='Wyloguj siê']"));
-		Assert.assertTrue(click(".//header//a[normalize-space(text())='Wyloguj siê']"));
+		Assert.assertTrue(input(".//form//input[@placeholder='Hasło']", variables.password));
+		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zaloguj się']"));
+		Assert.assertTrue(ifexist(".//header//a[normalize-space(text())='Wyloguj się']"));
+		Assert.assertTrue(click(".//header//a[normalize-space(text())='Wyloguj się']"));
 	  }
 
 	@AfterClass
