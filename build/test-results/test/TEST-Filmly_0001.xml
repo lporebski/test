@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Filmly_0001" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-01-16T16:21:19" hostname="DESKTOP-2H7HB1G" time="2.16">
+<testsuite name="Filmly_0001" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-01-16T17:16:21" hostname="DESKTOP-2H7HB1G" time="12.1">
   <properties/>
-  <testcase name="Filmly_0001" classname="Filmly_0001" time="2.16">
-    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//header//a[normalize-space(text())='Zarejestruj się']&quot;}&#10;  (Session info: headless chrome=97.0.4692.71)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-2H7HB1G', ip: '26.196.13.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Lucas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7b31390704f466f805469775589a0f4d&#10;*** Element info: {Using=xpath, value=.//header//a[normalize-space(text())='Zarejestruj się']}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//header//a[normalize-space(text())='Zarejestruj się']&quot;}
-  (Session info: headless chrome=97.0.4692.71)
+  <testcase name="Filmly_0001" classname="Filmly_0001" time="12.1">
+    <failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: .//form//button[@class='Button_button__KXFVC Button_button--primary__8PHza undefined Button_button--fullwidth__D-kIp Button_button--secondary__iv96u Button_button--disabled__FVXjh&#10;      ']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-2H7HB1G', ip: '26.196.13.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220113185450, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 18900, moz:profile: C:\Users\Lucas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 59b6b135-4222-4ef1-a62c-ab86c1b23aff&#10;*** Element info: {Using=xpath, value=.//form//button[@class='Button_button__KXFVC Button_button--primary__8PHza undefined Button_button--fullwidth__D-kIp Button_button--secondary__iv96u Button_button--disabled__FVXjh&#10;      ']}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: .//form//button[@class='Button_button__KXFVC Button_button--primary__8PHza undefined Button_button--fullwidth__D-kIp Button_button--secondary__iv96u Button_button--disabled__FVXjh
+      ']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-2H7HB1G', ip: '26.196.13.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Lucas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7b31390704f466f805469775589a0f4d
-*** Element info: {Using=xpath, value=.//header//a[normalize-space(text())='Zarejestruj się']}
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220113185450, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 18900, moz:profile: C:\Users\Lucas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 59b6b135-4222-4ef1-a62c-ab86c1b23aff
+*** Element info: {Using=xpath, value=.//form//button[@class='Button_button__KXFVC Button_button--primary__8PHza undefined Button_button--fullwidth__D-kIp Button_button--secondary__iv96u Button_button--disabled__FVXjh
+      ']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -27,7 +28,7 @@ Session ID: 7b31390704f466f805469775589a0f4d
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at Filmly_0001.click(Filmly_0001.java:21)
-	at Filmly_0001.Filmly_0001(Filmly_0001.java:66)
+	at Filmly_0001.Filmly_0001(Filmly_0001.java:93)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -83,15 +84,12 @@ Session ID: 7b31390704f466f805469775589a0f4d
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 16628
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-sty 16, 2022 5:21:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
+  <system-out><![CDATA[Element present
+]]></system-out>
+  <system-err><![CDATA[console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://filmly-app.vercel.app"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://filmly-app.vercel.app"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://filmly-app.vercel.app"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
 ]]></system-err>
 </testsuite>

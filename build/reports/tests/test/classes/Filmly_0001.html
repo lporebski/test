@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.160s</div>
+<div class="counter">12.100s</div>
 <p>duration</p>
 </div>
 </td>
@@ -67,7 +67,10 @@
 <a href="#tab1">Tests</a>
 </li>
 <li>
-<a href="#tab2">Standard error</a>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
@@ -76,15 +79,16 @@
 <a name="Filmly_0001"></a>
 <h3 class="failures">Filmly_0001</h3>
 <span class="code">
-<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//header//a[normalize-space(text())='Zarejestruj się']&quot;}
-  (Session info: headless chrome=97.0.4692.71)
+<pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: .//form//button[@class='Button_button__KXFVC Button_button--primary__8PHza undefined Button_button--fullwidth__D-kIp Button_button--secondary__iv96u Button_button--disabled__FVXjh
+      ']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-2H7HB1G', ip: '26.196.13.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Lucas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7b31390704f466f805469775589a0f4d
-*** Element info: {Using=xpath, value=.//header//a[normalize-space(text())='Zarejestruj się']}
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220113185450, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 18900, moz:profile: C:\Users\Lucas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 59b6b135-4222-4ef1-a62c-ab86c1b23aff
+*** Element info: {Using=xpath, value=.//form//button[@class='Button_button__KXFVC Button_button--primary__8PHza undefined Button_button--fullwidth__D-kIp Button_button--secondary__iv96u Button_button--disabled__FVXjh
+      ']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -101,7 +105,7 @@ Session ID: 7b31390704f466f805469775589a0f4d
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at Filmly_0001.click(Filmly_0001.java:21)
-	at Filmly_0001.Filmly_0001(Filmly_0001.java:66)
+	at Filmly_0001.Filmly_0001(Filmly_0001.java:93)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -171,23 +175,26 @@ Session ID: 7b31390704f466f805469775589a0f4d
 </thead>
 <tr>
 <td class="failures">Filmly_0001</td>
-<td class="failures">2.160s</td>
+<td class="failures">12.100s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
 </div>
 <div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Element present
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247}) on port 16628
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-sty 16, 2022 5:21:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
+<pre>console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://filmly-app.vercel.app&quot;
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://filmly-app.vercel.app&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: &quot;getRecipes: falling back to a synchronous message for:&quot; &quot;https://filmly-app.vercel.app&quot;
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
 </pre>
 </span>
 </div>
@@ -199,7 +206,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.7</a> at 16 sty 2022, 17:21:22</p>
+<a href="http://www.gradle.org">Gradle 6.7</a> at 16 sty 2022, 18:16:33</p>
 </div>
 </div>
 </body>
