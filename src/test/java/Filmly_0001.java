@@ -49,12 +49,12 @@ public class Filmly_0001 extends variables{
 	@BeforeClass
 	public void setUp()
 	{
-		WebDriverManager.firefoxdriver().setup();
-		FirefoxOptions options = new FirefoxOptions();
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--headless");
-		driver = new FirefoxDriver(options);
+		driver = new ChromeDriver(options);
 		driver.navigate().to("https://filmly-app.vercel.app/filmy");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.MILLISECONDS);
