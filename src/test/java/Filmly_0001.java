@@ -53,7 +53,7 @@ public class Filmly_0001 extends variables{
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
-		options.addArguments("--headless");
+//		options.addArguments("--headless");
 		driver = new ChromeDriver(options);
 		driver.navigate().to("https://filmly-app.vercel.app/filmy");
 		driver.manage().window().maximize();
