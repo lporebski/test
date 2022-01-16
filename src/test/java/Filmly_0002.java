@@ -73,9 +73,8 @@ public class Filmly_0002 extends variables{
 
 		Assert.assertTrue(click(".//header//a[normalize-space(text())='Zaloguj sie']"));
 		Assert.assertTrue(input(".//form//input[@placeholder='E-mail']", variables.email));
-		Assert.assertTrue(input(".//form//input[@placeholder='Has�o']", variables.password));
-		Assert.assertTrue(click(".//form//button[normalize-space(text())='Zaloguj si�']"));
-		Assert.assertTrue(ifexist(".//header//a[normalize-space(text())='Wyloguj si�']"));
+		Assert.assertTrue(input(".//form//input[@name='password']", variables.password));
+		Assert.assertTrue(click(".//form//button"));
 		Assert.assertTrue(click(".//main//div//h2[normalize-space(text())='Efekt motyla']/.."));
 		Assert.assertTrue(ifexist(".//main//div//h2[normalize-space(text())='Komentarze']"));
 		driver.findElement(By.xpath(".//main//div//button[normalize-space(text())='Dodaj']")).sendKeys(Keys.END);
@@ -83,7 +82,7 @@ public class Filmly_0002 extends variables{
 		Assert.assertTrue(click(".//main//div//button[normalize-space(text())='Dodaj']"));
 		Assert.assertTrue(click(".//main//div//button[normalize-space(text())='Dodaj']"));
 		Assert.assertTrue(ifexist(".//main//div//p[normalize-space(text())='Komentarz_ATp0002']"));
-		Assert.assertTrue(click(".//header//a[normalize-space(text())='Wyloguj si�']"));
+		Assert.assertTrue(click(".//header//a[normalize-space(text())='Wyloguj sie']"));
 	}
 
 	@AfterTest
